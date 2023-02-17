@@ -2,7 +2,7 @@
 title: java8新特性流
 date: 2023-02-17 17:08:00
 categories:
-- java
+- Java
 tags:
 - stream
 - sort

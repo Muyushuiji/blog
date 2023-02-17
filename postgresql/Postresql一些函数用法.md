@@ -2,7 +2,7 @@
 title: postgresql一些函数用法
 date: 2023-02-17 16:30:00
 categories:
-- postgresql
+- Postgresql
 tags:
 - 数据库
 - 函数

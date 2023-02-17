@@ -2,7 +2,7 @@
 title: springboot starter
 date: 2023-02-17 17:09:00
 categories:
-- java
+- Java
 tags:
 - springboot 
 ---

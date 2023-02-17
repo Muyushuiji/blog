@@ -3,7 +3,7 @@ title: MySQL存储过程
 date: 2023-02-17 16:30:00
 categories:
 - MySQL
-  tags:
+tags:
 - mysql
 - 存储过程
 ---
