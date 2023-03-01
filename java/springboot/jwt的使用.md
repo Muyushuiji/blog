@@ -49,10 +49,23 @@ jwt一般用于客户端和服务端之间认证用户的身份信息，用户�
 1. 客户端携带凭证（账号密码）请求服务端认证，服务端验证凭证信息，认证通过签发jwt并返回给客户端，客户端存储jwt。
 2. 客户端携带jwt请求服务端资源，服务端校验jwt合法性（是否正确、是否过期等），合法则将服务端资源返回给客户端。
 
-### java使用jwt
+### Spring Security
 
-#### 导入依赖
+Spring Security的核心部分为认证和授权，即登录和已登录用户的权限鉴定。
 
-```xml
-```
+#### 认证
+
+1. 通过自定义`DaoAuthenticationProvider`的实现类，重写`additionalAuthenticationChecks`方法，对比验证码逻辑和密码逻辑。
+2. 继承`OncePerRequestFilter`，并重写`doFilterInternal`方法，在`securityConfig`中配置自定义认证逻辑过滤器。
+
+#### 授权
+
+授权就是对已认证的用户进行权限鉴定，判断用户是否有权限访问请求的资源。
+
+1. 基于方法级别的注解鉴权，`@Secured`和`@PreAuthorize`
+2. 基于`config`配置，在`securityConfig`中添加`@EnableGlobalMethodSecurity(prePostEnabled = true)`开启方法级别鉴权。
+
+#### Security的认证授权框架
+
+
 
